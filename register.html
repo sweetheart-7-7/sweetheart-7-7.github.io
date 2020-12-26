@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>校园生活</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./index_files/css/main.css"> 
+	<link rel="stylesheet" href="./index_files/css/register.css"> 
+	<script type="text/javascript" src="./index_files/js/main.js"></script>
+</head>
+<body>
+	<div id="Container">
+		<div id="time">
+			<p id="timeCon">时间</p>
+		</div>
+		<div id="log">
+			<img src="./index_files/images/bc1.jpg">
+			<img src="./index_files/images/wether.png" id="w1">
+			<div id="wether">
+				<div id="temp">25℃</div>
+				<div>|</div>
+				<a href="#">收藏本站</a>
+				<div>|</div>
+				<a href="#">登陆</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<ul id="headBar">
+			<li><a href="./index.html">首页</a></li>
+			<div class="solveMag"><a>|</a></div>
+			<li class="solveMag"><a href="./liuyan.html">留言板</a></li>
+			<div class="solveMag"><a>|</a></div>
+			<li class="solveMag"><a href="./music.html">音乐</a></li>
+			<div class="solveMag"><a>|</a></div>
+			<li class="solveMag"><a href="./course.html">课程表</a></li>
+			<div class="solveMag"><a>|</a></div>
+			<li class="solveMag"><a href="./register.html">注册</a></li>
+			<input type="text" class="box" name="s" id="s" class="inputText" placeholder="输入关键词">
+			<img src="./index_files/images/search.png">
+		</ul>
+		<div class="clear"></div>
+		<div id="bodyCon">
+			<div id="sideBar">
+				<img src="./index_files/images/bc2.gif" id="leftImgGif">
+				<h3>通知</h3>
+				<!-- <div id="s1"> -->
+				<marquee behavior="scroll" direction="up">
+				    <p>各学院（部）师生：</p>
+					<p>为切实做好新型冠状病毒感染的肺炎疫情防控工作，确保学校广大师生员工健康安全，按照《兰州交通大学新型冠状病毒感染的肺炎疫情防控工作领导小组办公室公告（第1号）》要求，现对2019-2020学年第一学期本科课程补考做如下安排：</p>
+
+					<p>1、本学期课程补考不再提前进行，取消原定于2020年2月20日至2月23日进行的本科课程补考，同时取消原定于2020年2月19日至2月21日的补考试卷印刷安排，具体补考事宜在学校正式开学后另行安排通知 。</p>
+
+					<p>2、有需要参加补考的学生亦按照《兰州交通大学新型冠状病毒感染的肺炎疫情防控工作领导小组办公室公告（第1号）》要求，“在寒假结束之前，一律不得提前返校”。</p>  
+
+					<p>3、请各位师生加强自我防护，尽量减少外出，合理安排假期时间，密切关注校网及教务网，严格执行有关疫情防控的各项要求及学校相关教学安排。</p>
+			    </marquee>
+			    <h3>课外学习</h3>
+				<div id="classOpen">
+					<a href="https://www.csdn.net"><img src="./index_files/images/csdn.png"></a>
+					<a href="https://github.com"><img src="./index_files/images/github.jpg"></a>
+					<a href="https://www.imooc.com"><img src="./index_files/images/imooc.jpg"></a>
+					<a href="https://www.php.net"><img src="./index_files/images/php.jpg"></a>
+					<h3>开讲了</h3>
+				</div>
+				
+				<div id="speech">
+					<video width="180" height="120" src="./index_files/video/play.mp4" poster="" autoloop="" loop="" controls=""></video>
+				</div>
+			    <!-- </div> -->
+			</div>
+			
+			<div id="mainBody">
+                <form action="http://localhost:8888" method="post">
+					 <table align="center" width="600px">
+						
+					        <caption style="font-size: 20px;"><b>个人信息注册</b></caption>
+
+					    <tr>
+						 <td><font color="red">*</font> 用户名:</td><td><input type="text" name="user" style="width:200px; background-color:#00aaaa;"></td>			
+					    </tr>
+					    <tr>
+						<td><font color="red">*</font> 密码:</td><td><input type="pass" name="pass" style="width:200px;background-color:#ff00aa;"></td>	
+					    </tr>
+					    <tr>
+						 <td><font color="red">*</font> qq邮箱:</td><td><input type="email" name="user_email" style="width:200px;background-color:#ffffaa;"></td>
+					    </tr>
+					    <tr>
+						 <td><font color="red">*</font> 性别:</td><td>男:<input type="radio" name="sex" value="male">女:<input type="radio" name="sex" value="fmale"></td>
+					    </tr>
+					    <tr>
+						 <td><font color="red">*</font> 籍贯:</td><td><select name="location"><option>甘肃</option><option>山西</option></select></td>
+					    </tr>
+					    
+					    
+						
+					    <tr>
+						 <td><font color="red">*</font> 兴趣:</td><td>读书<input type="checkbox" name="like" value="read">音乐:<input type="checkbox" name="like" value="music">健身<input type="checkbox" name="like" value="excrise"></td>
+					    </tr>
+					    <tr>
+						 <td><font color="red">*</font> 个人简介:</td><td><textarea style="background-image:url(&#39;./1.jpg&#39;)" cols="30" rows="10" name="person" placeholder="lzjtu" required="required" autofocus="autofocus"></textarea></td>
+					    </tr>
+					    
+					    <tr>
+						 <td><font color="red">*</font>博客:</td><td><input type="url" list="url_list">
+					            <datalist id="url_list">
+					                <option value="http://www.lzjtu.edu.cn" />
+					                <option value="http://www.jd.com" />
+					                <option value="http://www.microsoft.com" />
+					            </datalist>    
+					     </td>
+					      
+					    </tr>
+					    <tr>
+						 <td><font color="red">*</font>年龄:</td><td><input type="number" name="points" min="0" value="18"></td>
+					    </tr>
+					    
+					    <tr>
+						 <td><font color="red">*</font>入学时间:</td><td><input type="date"></td>
+					    </tr>
+					    <tr>
+						  <td></td><td><input type="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"></td>
+					    </tr>
+
+					    </table>	
+
+					</form>
+            </div>
+		</div>
+		<div id="footer">
+			<div id="row1">
+				<div id="aboutAs">
+					<h4>关于我们</h4>
+					<p>我们为兰州交通大学软件1901班服务，为其提供最好的学习环境。</p>
+					<img src="./index_files/images/1.png" id="im1">
+					<img src="./index_files/images/2.png" id="im2">
+					<img src="./index_files/images/3.png" id="im3">
+					<img src="./index_files/images/4.png" id="im4">
+				</div>
+				<div id="auth">
+					<h4>开发人员</h4>
+					<p>专业:软件工程</p>
+					<p>班级:软件1901</p>
+					<p>学号:1903206123</p>
+					<p>姓名:王恒博</p>
+				</div>
+				<div id="contact">
+					<h4>联系方式</h4>
+					<p id="pro">兰州交通大学软件班</p>
+					<p id="iphone">123-456-789</p>
+					<p id="email">edua@info.com</p>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<hr />
+			<div class="friendlinks">
+				<p><b>友情链接</b>&nbsp;&nbsp;&nbsp;
+					<a href="https://www.lzjtu.edu.cn/">兰交大官网</a>&nbsp;
+					<a href="http://jiaowu.lzjtu.edu.cn/">兰交大教务处</a>&nbsp;
+					<a href="#">兰交大电信院</a>&nbsp;
+				</p>
+			</div>
+			<div class="ff">
+				<div><p id="fp1">Copyright © 2020 兰州交通大学 </p></div>
+				<div><p id="fp2">Powered By 王恒博 </p></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,15 @@
+#mainBody table{
+	margin-left: 100px;
+}
+
+#mainBody table caption{
+	margin-left: -100px;
+}
+#mainBody{
+	height: 300px;
+}
+
+#bodyCon{
+	height: 1100px;
+	width: 1000px;
+}
